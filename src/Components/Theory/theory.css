@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .folder {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .folder {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .folder {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
