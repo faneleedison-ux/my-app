@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import black from "../Images/black.png";
-import brown from "../Images/default.png";
-import gray from "../Images/gray.png";
+import black from "../../assets/Images/black.png";
+import brown from "../../assets/Images/default.png";
+import gray from "../../assets/Images/gray.png";
 import Draggable from "react-draggable";
 import "./design.css";
 import { Link } from "react-router-dom";
