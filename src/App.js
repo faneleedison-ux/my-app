@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -41,12 +42,12 @@ function App() {
         <Routes>
           <Route exact path="/my-app" element={<Home />} />
           <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route path="/design" element={<Design />} />
           <Route path="/theory" element={<Theory />} />
           <Route path="/art" element={<Art />} />
-
+          
           <Route path="/submit" element={<SubmitBtn />} />
 
           <Route path="/devblogs" element={<Devblogs />} />
