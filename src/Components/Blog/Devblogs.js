@@ -1,14 +1,24 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import RoundedButtons from "../Buttons/RoundedButtons";
 
 const BlogPostTemplate = () => {
   return (
+    <div>
+    <RoundedButtons/>
+    <div style={{
+                  border: "2px solid red",
+                  borderRadius: "100px",
+                  backgroundColor: "beige",
+                  padding: "10px",
+                }}>
     <Box
       sx={{
-        backgroundColor: "#f5f5f5",
+        
         padding: "2rem",
         borderRadius: "4px",
+        
       }}
     >
       <Typography variant="h4" sx={{ marginBottom: "1rem" }}>
@@ -232,6 +242,8 @@ Mazzone and Elgammal look at how AI could enhance artistic potential and increas
         Written by Fanelesibonge Mbuyazi
       </Typography>
     </Box>
+    </div>
+    </div>
   );
 };
 

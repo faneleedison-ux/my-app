@@ -24,7 +24,7 @@ export default class Hello extends Component {
                 className="paragraph"
                 style={{
                   border: "2px solid red",
-                  borderRadius: "10px",
+                  borderRadius: "50px",
                   backgroundColor: "beige",
                   padding: "10px",
                 }}
@@ -48,7 +48,7 @@ export default class Hello extends Component {
                 className="paragraph"
                 style={{
                   border: "2px solid red",
-                  borderRadius: "10px",
+                  borderRadius: "50px",
                   backgroundColor: "beige",
                   padding: "10px",
                 }}
@@ -71,7 +71,7 @@ export default class Hello extends Component {
                 className="paragraph"
                 style={{
                   border: "2px solid red",
-                  borderRadius: "10px",
+                  borderRadius: "50px",
                   backgroundColor: "beige",
                   padding: "10px",
                 }}

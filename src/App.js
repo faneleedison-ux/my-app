@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
-import About from "./Components/About/About";
+import About from "./Components/About/AboutPage";
 import Theory from "./Components/Theory/Theory";
 import Design from "./Components/Design/Design";
 import Essay from "./Components/Blog/Essay";
@@ -21,13 +21,14 @@ import Sand from "./Components/Home/SandHourglass";
 import RoundedButtons from "./Components/Buttons/RoundedButtons";
 import Words from "./Components/Home/Words";
 
-import BackgroundVideo from './BackgroundVideo';
-import './BackgroundVideo.css';
+import BackgroundVideo from './Components/Background/BackgroundVideo';
+import './Components/Background/BackgroundVideo.css';
 function App() {
   return (
     
       <div className="App">
         <BackgroundVideo />
+        
         
         <Router>
           <Routes>
@@ -51,6 +52,7 @@ function App() {
             <Route path="/rationale" element={<Ration />} />
           </Routes>
         </Router>
+        
         
       </div>
     

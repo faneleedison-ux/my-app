@@ -4,10 +4,19 @@ import Typography from "@mui/material/Typography";
 import ImagesSlider from "../Design/ImagesSlider";
 import ImagesSlider2 from "../Design/ImagesSlider2";
 import { Link } from "react-router-dom";
+import RoundedButtons from "../Buttons/RoundedButtons";
 
 
 const Wireframes = () => {
   return (
+    <div>
+    <RoundedButtons/>
+    <div style={{
+                  border: "2px solid red",
+                  borderRadius: "100px",
+                  backgroundColor: "beige",
+                  padding: "10px",
+                }}>
     <Box
       sx={{
         backgroundColor: "#f5f5f5",
@@ -82,6 +91,8 @@ const Wireframes = () => {
         Written by Fanelesibonge Mbuyazi
       </Typography>
     </Box>
+    </div>
+    </div>
   );
 };
 

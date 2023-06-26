@@ -1,0 +1,47 @@
+.folder {
+    background-color: beige;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .folder .title {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .folder .description {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  
+  .container {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-wrap: wrap;
+      }
+    
+      .folder {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .folder {
+        width: 120px;
+        height: 120px;
+      }
+    }
+    
