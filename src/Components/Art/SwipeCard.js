@@ -93,26 +93,32 @@ const SwipeCard = () => {
           </div>
         ) : (
           <div className="end-message" style={{ backgroundColor: "beige" }}>
-            <p>Error 404: Many Victims !!!</p>
+            <p>Error 404: Could Not Load. err..err</p>
+            <p>Too Victims...</p>
+            <p>Stop The Killing And Try Again.</p>
+            
+
             <button className="reset-button" onClick={handleReset}>
               Reset
             </button>
           </div>
         )}
+
+        <div className="stats-button-container">
+          <img
+            className="stats-button"
+            src={showChatbot ? CaseH : CaseS}
+            alt={showChatbot ? "Hide Stats" : "Show Stats"}
+            onClick={toggleChatbot}
+            style={{
+              fontWeight: "bold",
+              color: "red",
+              border: "2px solid red",
+            }}
+          />
+        </div>
       </div>
       {showChatbot && <ProvinceStats />}
-      <img
-        className="stats-button"
-        src={showChatbot ? CaseH : CaseS}
-        alt={showChatbot ? "Hide Stats" : "Show Stats"}
-        onClick={toggleChatbot}
-        style={{
-          fontWeight: "bold",
-          color: "red",
-        
-          border: "2px solid red",
-        }}
-      />
     </div>
   );
 };
