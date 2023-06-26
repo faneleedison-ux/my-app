@@ -5,7 +5,8 @@ import RoundedButtons from "../Buttons/RoundedButtons";
 import ProvinceStats from "./ProvinceStats";
 import Words from "../Home/Words";
 
-import CaseF from "../../assets/Images/bgcase-fotor-bg-remover-20230626155922.png";
+import CaseH from "../../assets/Images/hide-fotor-bg-remover-20230626161821.png";
+import CaseS from "../../assets/Images/show-fotor-bg-remover-20230626161835.png";
 
 import image1 from "../../assets//Images/gbv0.jpg";
 import image2 from "../../assets//Images/gbv1.jpg";
@@ -102,7 +103,7 @@ const SwipeCard = () => {
       {showChatbot && <ProvinceStats />}
       <img
         className="stats-button"
-        src={showChatbot ? CaseF : CaseF}
+        src={showChatbot ? CaseH : CaseS}
         alt={showChatbot ? "Hide Stats" : "Show Stats"}
         onClick={toggleChatbot}
         style={{
