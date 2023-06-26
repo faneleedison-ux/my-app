@@ -1,55 +1,87 @@
 import React, { Component } from "react";
-import black from "../../assets/Images/black.png";
-import brown from "../../assets/Images/default.png";
-import gray from "../../assets/Images/gray.png";
+import Casefolder from "../../assets/Images/casefolder.png";
+
 import Draggable from "react-draggable";
-import "./theory.css";
+
 import { Link } from "react-router-dom";
+import Words from "../Home/Words";
+
+import RoundedButtons from "../Buttons/RoundedButtons";
 
 export default class Hello extends Component {
   render() {
     return (
       <React.Fragment>
+        <RoundedButtons />
+        <Words/>
         <div className="container">
           <Draggable>
             <div className="folder">
               <Link to="/devblogs">
-                <img src={gray} alt="gray folder" />
+                <img src={Casefolder} alt="gray folder" />
               </Link>
-              <p>Dev Blogs</p>
-              <p>
+              <div
+                className="paragraph"
+                style={{
+                  border: "2px solid red",
+                  borderRadius: "10px",
+                  backgroundColor: "beige",
+                  padding: "10px",
+                }}
+              >
+              <p className="title">Dev Blogs</p>
+              <p className="description">
                 This folder is draggable and contains the following content:
                 written critical reflection dev blogs for WSOA4175A week 8 to
                 week 14.
               </p>
+              </div>
             </div>
           </Draggable>
 
           <Draggable>
             <div className="folder">
               <Link to="/essay">
-                <img src={black} alt=" black folder" />
+                <img src={Casefolder} alt=" black folder" />
               </Link>
-
-              <p>Essay</p>
-              <p>
-                This folder is draggable and contains tthe following content:
-                the essay and technical preparatory work.
+              <div
+                className="paragraph"
+                style={{
+                  border: "2px solid red",
+                  borderRadius: "10px",
+                  backgroundColor: "beige",
+                  padding: "10px",
+                }}
+              >
+              <p className="title">Essay</p>
+              <p className="description">
+                This folder is draggable and contains the following content: the
+                essay and technical preparatory work.
               </p>
+              </div>
             </div>
           </Draggable>
 
           <Draggable>
             <div className="folder">
               <Link to="/research">
-                <img src={brown} alt="ebrown folderxample" />
+                <img src={Casefolder} alt="ebrown folderxample" />
               </Link>
-
-              <p>Research</p>
-              <p>
-                This folder is draggable and contains tthe following content:
+              <div
+                className="paragraph"
+                style={{
+                  border: "2px solid red",
+                  borderRadius: "10px",
+                  backgroundColor: "beige",
+                  padding: "10px",
+                }}
+              >
+              <p className="title">Research</p>
+              <p className="description">
+                This folder is draggable and contains the following content:
                 additional writing, reflection, and extra research.
               </p>
+              </div>
             </div>
           </Draggable>
         </div>

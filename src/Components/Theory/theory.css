@@ -1,14 +1,31 @@
+.folder {
+  background-color: beige;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.folder .title {
+  color: red;
+  margin-top: 10px;
+}
+
+.folder .description {
+  color: red;
+  margin-top: 10px;
+}
+
+
 .container {
     display: flex;
     justify-content: space-around;
   }
   
-  .folder {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin: 10px;
-  }
+  
   
   @media (max-width: 768px) {
     .container {

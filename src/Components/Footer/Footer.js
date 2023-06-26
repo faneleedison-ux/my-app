@@ -17,10 +17,7 @@ function Footer() {
         py: 3,
         px: 2,
         mt: 'auto',
-        backgroundColor: (theme) =>
-          theme.palette.mode === 'light'
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
+        backgroundColor: '#e6e6fa', // Light purple background color
       }}
     >
       <Container maxWidth="sm">
